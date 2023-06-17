@@ -16,6 +16,10 @@ class Empleado(models.Model):
     horario_entrada = models.TimeField()
     horario_salida = models.TimeField()
 
+    #Nuevos campos
+    activo = models.BooleanField(default=True)
+    telefono = models.CharField(max_length=20, blank=True)
+
 
 
 class Jornada(models.Model):
